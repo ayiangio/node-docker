@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: garygrossgarten/github-action-scp@release
         with:
-          local: ../../nodeDocker/*
+          local: *
           remote: /home/yunandar/ayi/nodeDocker
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
