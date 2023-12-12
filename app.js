@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 /* Endpoint */
 app.get('/welcome', (req, res) => {
   result = {
-    "Message" : `Welcome To this API ${process.env.NAME}`,
+    "Message" : `First CICD Deployment`,
     "Status Code" : 200,
   }
   res.json(result)

@@ -27,3 +27,4 @@ jobs:
           password: ${{ secrets.PASS }}
           port: 22
           script: bash /home/yunandar/deploy.sh
+
