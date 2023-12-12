@@ -24,6 +24,6 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          password: ${{ secrets.PASS_ }}
+          password: ${{ secrets.PASS }}
           port: 22
           script: bash /home/yunandar/deploy.sh
