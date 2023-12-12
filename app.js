@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 /* Endpoint */
-app.get('/welcome', (req, res) => {
+app.get('/home', (req, res) => {
   result = {
     "Message" : `First CICD Deployment`,
     "Status Code" : 200,
