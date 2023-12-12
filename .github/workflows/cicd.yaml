@@ -11,13 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: garygrossgarten/github-action-scp@release
-        with:
-          local: /*
-          remote: /home/yunandar/ayi/nodeDocker
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          password: ${{ secrets.PASS }}
+      - run : pwd
+      # - uses: garygrossgarten/github-action-scp@release
+      #   with:
+      #     local: 
+      #     remote: /home/yunandar/ayi/nodeDocker
+      #     host: ${{ secrets.HOST }}
+      #     username: ${{ secrets.USER }}
+      #     password: ${{ secrets.PASS }}
       - uses: actions/setup-node@v3
         with:
           node-version: 20
